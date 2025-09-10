@@ -162,7 +162,7 @@
   <script>
     async function updateVisitorCount() {
       try {
-        const res = await fetch("https://srjfskn712.execute-api.us-east-1.amazonaws.com/count");
+        const res = await fetch("https://f8e9rxduk1.execute-api.us-east-1.amazonaws.com/count");
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const text = await res.text();
         const el = document.getElementById("visitorCount");
