@@ -9,7 +9,7 @@ This repo deploys a **serverless resume website** using **Terraform** on AWS:
 
 > Use the CloudFront-provided domain (e.g. `d1234abcd.cloudfront.net`) by default. You can add a custom domain + ACM later.
 
-![Architecture Diagram](diagrams/Cloud Diagram.png)
+![Architecture Diagram](diagrams/cloud_resume_architecture.png)
 
 ---
 
