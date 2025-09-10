@@ -9,6 +9,8 @@ This repo deploys a **serverless resume website** using **Terraform** on AWS:
 
 > Use the CloudFront-provided domain (e.g. `d1234abcd.cloudfront.net`) by default. You can add a custom domain + ACM later.
 
+![Architecture Diagram](diagrams/Cloud Diagram.png)
+
 ---
 
 ## 📦 Structure
@@ -26,8 +28,8 @@ cloud-resume-challenge/
 │  └─ counter.py
 ├─ resume/
 │  └─ index.html
-├─ diagrams/        # put your diagram PNG/SVG here
-└─ screenshots/     # terraform apply output, console screenshots
+├─ diagrams/        
+└─ screenshots/    
 ```
 
 ---
@@ -36,7 +38,7 @@ cloud-resume-challenge/
 
 1) **Install**: Terraform ≥ 1.6, AWS CLI, Python 3.11+  
 2) **Configure AWS creds** (env vars or `aws configure`).  
-3) **Set variables**: Copy `terraform/terraform.tfvars.example` to `terraform/terraform.tfvars` and edit values.  
+3) **Set variables**: Go into `terraform/terraform.tfvars` and edit values to match the values you want to use.  
 4) **Deploy**:
 ```bash
 cd terraform
@@ -44,8 +46,8 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 ```
-5) **Open your site**: Copy the `cloudfront_domain_name` output and visit it in your browser.  
-6) **Destroy when done** (to avoid charges):
+1) **Open your site**: Copy the `cloudfront_domain_name` output and visit it in your browser.  
+2) **Destroy when done** (to avoid charges):
 ```bash
 terraform destroy
 ```
