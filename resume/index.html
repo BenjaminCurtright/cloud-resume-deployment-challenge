@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benjamin Curtright — Resume (2025)</title>
+  <meta name="description" content="Resume of Benjamin Curtright — Cloud & Security Engineer">
+  <style>
+    :root {
+      --fg:#0f172a; --muted:#475569; --rule:#e5e7eb; --chip:#eef2ff; --bg:#ffffff; --accent:#2563eb;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; }
+    .wrap { max-width:900px; margin: 0 auto; padding: 28px 20px; }
+    header { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; padding-bottom:14px; border-bottom:1px solid var(--rule); margin-bottom:18px; }
+    h1 { font-size: clamp(28px, 4vw, 36px); line-height:1.2; margin:0; }
+    .subtitle { color: var(--muted); margin-top: 2px; }
+    .contact { color: var(--muted); font-size: 14px; text-align:right; }
+    .contact a { color: var(--muted); text-decoration: none; }
+    .contact a:hover { color: var(--accent); }
+    h2 { font-size: 18px; margin: 18px 0 8px; letter-spacing:.02em; }
+    h3 { font-size: 15px; margin: 8px 0 2px; }
+    .grid-2 { display:grid; grid-template-columns: 1fr 2fr; gap: 18px; }
+    @media (max-width: 760px) { .grid-2 { grid-template-columns: 1fr; } .contact { text-align:left; } }
+    ul { margin: 6px 0 0 18px; }
+    .chips { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+    .chip { background: var(--chip); padding: 3px 10px; border-radius: 999px; font-size: 12px; border:1px solid #c7d2fe; }
+    .kicker { font-weight: 700; color: var(--muted); text-transform: uppercase; font-size: 12px; letter-spacing: .08em; }
+    .muted { color: var(--muted); }
+    .section { padding-top: 6px; padding-bottom: 6px; }
+    .split { display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+    .when { color: var(--muted); font-size: 13px; white-space:nowrap; }
+    .rule { border-top:1px solid var(--rule); margin: 10px 0; }
+    a.badge { display:inline-block; margin-right:6px; margin-top:6px; background:#ecfeff; border:1px solid #a5f3fc; color:#0e7490; padding:2px 8px; border-radius:6px; font-size:12px; text-decoration:none; }
+    @media print {
+      .wrap { padding: 0; }
+      a { color: black !important; text-decoration: none; }
+      header { border-bottom: none; margin-bottom: 8px; padding-bottom: 0; }
+      .rule { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Benjamin Curtright</h1>
+        <div class="subtitle">Frisco, TX</div>
+        <div class="chips">
+          <span class="chip">AWS</span>
+          <span class="chip">Terraform</span>
+          <span class="chip">Python</span>
+          <span class="chip">Linux</span>
+          <span class="chip">Security+</span>
+        </div>
+      </div>
+      <div class="contact">
+        <div><a href="mailto:bencurty@gmail.com">bencurty@gmail.com</a></div>
+        <div><a href="tel:+19193321541">(919) 332-1541</a></div>
+        <div><a href="https://linkedin.com/in/benjamin-curtright/" target="_blank" rel="noopener">linkedin.com/in/benjamin-curtright</a></div>
+      </div>
+    </header>
+
+    <!-- Visitors box (added) -->
+    <div class="section" style="margin:10px 0;color:#475569;">
+      Visitors: <span id="visitorCount">…</span>
+    </div>
+
+    <section class="section">
+      <div class="kicker">Education</div>
+      <div class="split">
+        <div><strong>University of North Texas</strong> — BS in Cybersecurity</div>
+        <div class="when">Jan 2022 – Dec 2024</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="kicker">Certifications</div>
+      <a class="badge" href="https://www.credly.com/badges/94e5f207-dd1b-45b7-aa1b-e9e381822d67/public_url" target="_blank" rel="noopener">CompTIA Security+ (SY0-701), Expires Apr 2028</a>
+      <a class="badge" href="https://www.credly.com/badges/733beb6b-536b-47f4-bf94-ad3a6d761b80/public_url" target="_blank" rel="noopener">AWS Cloud Practitioner, Expires Aug 2028</a>
+    </section>
+
+    <section class="section">
+      <div class="kicker">Technical Skills</div>
+      <div class="grid-2">
+        <div>
+          <h3>Cloud & Infrastructure</h3>
+          <div class="muted">AWS (IAM, VPC, EC2, S3, RDS, CloudTrail, KMS), Terraform, AWS Config</div>
+        </div>
+        <div>
+          <h3>Security & Detection</h3>
+          <div class="muted">Python (automation), Wireshark, Suricata, Splunk, MITRE ATT&CK, malware analysis (Zeus Trojan)</div>
+        </div>
+        <div>
+          <h3>OS & Networking</h3>
+          <div class="muted">Linux (Ubuntu, Kali), Windows 10/11, Bash, PowerShell, TCP/IP, SSH, HTTP/S, packet capture</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="kicker">Projects</div>
+      <div class="rule"></div>
+      <div class="split">
+        <strong>Secure AWS Infrastructure Deployment with Terraform</strong>
+      </div>
+      <ul>
+        <li>Provisioned secure AWS infrastructure (VPC, EC2, RDS, S3) following cloud security architecture and least privilege access.</li>
+        <li>Enforced compliance with IAM roles, security groups, and encryption (AWS KMS); segmented networks across public/private subnets.</li>
+        <li>Enabled centralized logging & continuous monitoring with CloudTrail, Config, and encrypted S3 for audit readiness and incident response.</li>
+      </ul>
+
+      <div class="rule"></div>
+      <div class="split">
+        <strong>Python Honeypot for SSH and HTTP Traffic Monitoring</strong>
+      </div>
+      <ul>
+        <li>Developed custom Python honeypot emulating SSH/HTTP services to capture unauthorized access attempts and malicious traffic.</li>
+        <li>Deceived attackers with realistic responses while collecting intrusion data in a controlled environment.</li>
+        <li>Implemented logging to record attacker IPs and login attempts for forensic analysis.</li>
+      </ul>
+
+      <div class="rule"></div>
+      <div class="split">
+        <strong>Malware Analysis Lab — Zeus Trojan</strong>
+      </div>
+      <ul>
+        <li>Built an isolated malware analysis lab for safe examination of Windows-based banking malware.</li>
+        <li>Analyzed Zeus behavior including network traffic, filesystem changes, and registry modifications.</li>
+        <li>Documented findings with emphasis on credential theft and persistence mechanisms.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="kicker">Experience</div>
+      <div class="rule"></div>
+      <div class="split">
+        <div><strong>Inventory Specialist</strong> — 2020 Companies, Frisco, TX</div>
+        <div class="when">Feb 2022 – Present</div>
+      </div>
+      <ul>
+        <li>Collaborated cross-functionally to identify and resolve asset tracking discrepancies, applying investigative and incident resolution techniques aligned with security policies.</li>
+        <li>Supported audit processes by reconciling discrepancies, reinforcing data integrity and compliance controls.</li>
+      </ul>
+
+      <div class="rule"></div>
+      <div class="split">
+        <div><strong>Cybersecurity Capstone Project — Secure Health App</strong> — University of North Texas, Denton, TX</div>
+        <div class="when">Aug 2023 – May 2024</div>
+      </div>
+      <ul>
+        <li>Performed comprehensive threat modeling and security risk analysis aligned with NIST RMF and HIPAA standards.</li>
+        <li>Implemented TLS and AES to secure data in transit and at rest.</li>
+      </ul>
+    </section>
+
+    <footer class="section muted" style="margin-top:10px;">
+      <small>© 2025 Benjamin Curtright</small>
+    </footer>
+  </div>
+
+  <script>
+    async function updateVisitorCount() {
+      try {
+        const res = await fetch("https://srjfskn712.execute-api.us-east-1.amazonaws.com/count");
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const text = await res.text();
+        const el = document.getElementById("visitorCount");
+        if (el) el.textContent = text;
+      } catch (e) {
+        console.error("Visitor API error:", e);
+        const el = document.getElementById("visitorCount");
+        if (el) el.textContent = "—";
+      }
+    }
+    updateVisitorCount();
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+# ======================
+# Terraform
+# ======================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+.terraform.lock.hcl
+
+# ======================
+# Python (Lambda)
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.whl
+*.zip
+
+# ======================
+# Logs
+# ======================
+*.log
+*.out
+*.err
+
+# ======================
+# OS junk files
+# ======================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ======================
+# IDE / Editor
+# ======================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ======================
+# AWS CLI credentials (never commit!)
+# ======================
+.aws/
